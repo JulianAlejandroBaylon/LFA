@@ -8,7 +8,10 @@ import { MarketplaceComponent } from './marketplace/marketplace.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavbarComponent,
+    HomeComponent,
+    MarketplaceComponent
   ],
   imports: [
     BrowserModule
