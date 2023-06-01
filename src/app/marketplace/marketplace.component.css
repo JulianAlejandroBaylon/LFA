@@ -1,0 +1,38 @@
+*{
+  color: white;
+}
+#marketplace{
+  background-color: #000000;
+}
+#pt1{
+  background-image: url('/assets/images/fondo.png');
+  text-align: center;
+}
+#types{
+  text-align: center;
+}
+#drops{
+  display: flex;
+  border-color: white;
+  border-style: solid;
+  width: 95%;
+  margin: auto;
+}
+
+#drops img{
+  width: 70%;
+  height: 55%;
+  margin: 2vw 0 0px 0px;
+}
+
+#drops div{
+  text-align: center;
+    font-weight: 700;
+    font-size: 2vw;
+}
+
+#gallery{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
