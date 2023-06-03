@@ -1,17 +1,17 @@
-*{
+* {
   color: white;
 }
-#marketplace{
+#marketplace {
   background-color: #000000;
 }
-#pt1{
-  background-image: url('/assets/images/fondo.png');
+#pt1 {
+  background-image: url("/assets/images/fondo.png");
   text-align: center;
 }
-#types{
+#types {
   text-align: center;
 }
-#drops{
+#drops {
   display: flex;
   border-color: white;
   border-style: solid;
@@ -19,20 +19,98 @@
   margin: auto;
 }
 
-#drops img{
+#drops img {
   width: 70%;
   height: 55%;
   margin: 2vw 0 0px 0px;
 }
 
-#drops div{
+#drops div {
   text-align: center;
-    font-weight: 700;
-    font-size: 2vw;
+  font-weight: 700;
+  font-size: 2vw;
 }
 
-#gallery{
+#gallery {
   display: flex;
   text-align: center;
   justify-content: center;
+}
+
+#dropslist {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 90%;
+  margin: auto;
+}
+
+.products {
+  border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 1% auto;
+    width: 20%;
+    border-radius: 3%;
+}
+
+.products img{
+  width: 65%;
+    margin: 10% auto auto auto;
+}
+
+#desc{
+  margin: auto;
+    width: 90%;
+}
+
+#foot{
+  border-top-color: white;
+    border-top-style: solid;
+    width: 100%;
+}
+
+#foot p{
+  margin: 5% auto;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#seller{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#best{
+  display: flex;
+  width: 40%;
+  border: 2px solid white;
+  margin: auto;
+  margin-top: 2%;
+  border-radius: 3%;
+}
+
+#last{
+  display: flex;
+  justify-content: center;
+}
+
+#recent{
+  border: 2px solid;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
+#recent img{
+  width: 60%;
 }
