@@ -1,3 +1,126 @@
-body{
+h1 {
+    font-family: 'American-Captain';
+    font-weight: 400;
+    font-size: 10vw;
+    color: white;
+    margin: 0;
+}
+
+.startpage {
+    height: 100vh;
+    background-image: url('/assets/images/Inicio.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: #0B0B0B;
+}
+
+.firsttitle {
+    margin-top: 13%;
+    float: right;
+    width: 50%;
+}
+
+.firsttitle a {
+    color: gray;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+#albumtext {
+    margin-left: 3%;
+}
+
+
+
+/*SECOND SECTION*/
+.description p {
+    font-family: 'Poppins-Regular';
+    color: white;
+    font-size: 2vw;
+    width: 60%;
+}
+
+.description {
+    height: 70vh;
+    background-image: url('/assets/images/secondsect.png');
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-color: #0B0B0B;
+    position: relative;
+    background-position: right bottom;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.description::before,
+.description::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background-image: linear-gradient(to right, #ff0000 0%, #0B0B0B 25%, #0B0B0B 75%, #0FA852 100%);
+}
+
+.description::before {
+    top: 0;
+}
+
+.description::after {
+    bottom: 0;
+}
+
+.description img {
+    height: 100%;
+}
+
+/*THIRD SECTION*/
+.nftcollection {
+    height: 100vh;
+    background-color: #0B0B0B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.nftcollection h2{
+    font-family: 'American-Captain';
+    font-weight: 400;
+    font-size: 5vw;
+    color: white;
+    margin: 0;
+}
+.collection1{
+    /*background-color: blue;*/
+    width: 80%;
+    height: 70%;    
+    display: flex;
+}
+.one{
+    background: linear-gradient(to bottom,  rgba(0, 0, 0, 0)0%, rgba(255, 0, 0, 0.508), rgba(0, 0, 0, 0)100%);
+    width: 20%;    
+    color: white;
+}
+.two{
+    background: linear-gradient(to bottom,  rgba(0, 0, 0, 0)0%, blue, rgba(0, 0, 0, 0)100%);
+    width: 20%;
+}
+.three{
+    background: linear-gradient(to bottom,  rgba(0, 0, 0, 0)0%, Green, rgba(0, 0, 0, 0)100%);
+    width: 20%;
+}
+.four{
+    background: linear-gradient(to bottom,  rgba(0, 0, 0, 0)0%, yellow, rgba(0, 0, 0, 0)100%);
+    width: 20%;
+}
+.five{
+    background: linear-gradient(to bottom,  rgba(0, 0, 0, 0)0%, purple, rgba(0, 0, 0, 0)100%);
+    width: 20%;
+}
+/*FOURTH SECTION*/
+.drops {
+    height: 100vh;
     background-color: red;
 }
