@@ -84,43 +84,156 @@ h1 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    transition: height 0.3s ease;
+    /* Agrega una transición suave para la animación */
+    overflow: hidden;
+    /* Oculta el contenido que exceda la altura de la sección */
 }
-.nftcollection h2{
+
+.nftcollection h2 {
     font-family: 'American-Captain';
     font-weight: 400;
     font-size: 5vw;
     color: white;
     margin: 0;
 }
-.collection1{
-    /*background-color: blue;*/
+
+.collection1 {
     width: 80%;
-    height: 70%;    
+    height: 70%;
     display: flex;
 }
-.one{
-    background: linear-gradient(to bottom,  rgba(0, 0, 0, 0)0%, rgba(255, 0, 0, 0.508), rgba(0, 0, 0, 0)100%);
-    width: 20%;    
+
+.one {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0)0%, rgba(255, 0, 0, 0.371), rgba(0, 0, 0, 0)100%);
+    width: 20%;
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
 }
-.two{
-    background: linear-gradient(to bottom,  rgba(0, 0, 0, 0)0%, blue, rgba(0, 0, 0, 0)100%);
+
+.two {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0)0%, rgba(13, 0, 255, 0.371), rgba(0, 0, 0, 0)100%);
     width: 20%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
 }
-.three{
-    background: linear-gradient(to bottom,  rgba(0, 0, 0, 0)0%, Green, rgba(0, 0, 0, 0)100%);
+
+.three {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0)0%, rgba(0, 255, 26, 0.371), rgba(0, 0, 0, 0)100%);
     width: 20%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
 }
-.four{
-    background: linear-gradient(to bottom,  rgba(0, 0, 0, 0)0%, yellow, rgba(0, 0, 0, 0)100%);
+
+.four {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0)0%, rgba(246, 255, 0, 0.371), rgba(0, 0, 0, 0)100%);
     width: 20%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
 }
-.five{
-    background: linear-gradient(to bottom,  rgba(0, 0, 0, 0)0%, purple, rgba(0, 0, 0, 0)100%);
+
+.five {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0)0%, rgba(255, 0, 247, 0.371), rgba(0, 0, 0, 0)100%);
     width: 20%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
 }
+
+
+.imgteam {
+    width: 80%;
+}
+
+.nftcollection p {
+    margin: 0;
+}
+
+.team {
+    font-family: 'Poppins-Regular';
+    font-size: 1.3vw;
+}
+
+.place {
+    font-family: 'Poppins-Regular';
+    font-size: 0.8vw;
+}
+
+.collection1 li {
+    list-style-type: none;
+}
+
+.hidden-section {
+    display: flex;
+}
+
+.movedown {
+    margin-top: 20px;
+    /* Ajusta el valor según sea necesario para el espaciado */
+}
+
+.nftcollection.expanded {
+    height: 200vh;
+    /* Establece la altura expandida de la sección */
+}
+
+.collection2 {
+    width: 80%;
+    height: 70%;
+    display: flex;
+}
+
 /*FOURTH SECTION*/
 .drops {
     height: 100vh;
     background-color: red;
+}
+.content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.overview{
+    background-color: white;
+    width: 100%;
+}
+.overviewbox1 {
+    background-color: blue;
+    width: 50%;
+}
+.overviewbox2 {
+    background-color: green;
+    width: 50%;
+}
+.overviewbox3 {
+    background-color: yellow;
+    width: 50%;
+}
+.stockbox {
+    background-color: blue;
+    width: 50%;
+}
+
+.soldoutbox {
+    background-color: blue;
+    width: 50%;
 }
