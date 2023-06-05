@@ -5,29 +5,191 @@
         <h1>COMPLETA TU</h1>
         <h1 id="albumtext">ALBUM DE NFT</h1>
         <a href="">ADQUIERE TU PRIMER NFT</a>
-    </div>    
+    </div>
 </section>
 <section class="description">
     <p>
-        LFA FAN es un marketplace de compra y venta de NFTs deportivos exclusivos de la LFA donde los usuarios podrán coleccionar los activos digitales mostrandolos en un álbum de su propio perfil, la adquisición puede ser dentro de drops o en marketplace comprándolo a otro usuario.
+        LFA FAN es un marketplace de compra y venta de NFTs deportivos exclusivos de la LFA donde los usuarios podrán
+        coleccionar los activos digitales mostrandolos en un álbum de su propio perfil, la adquisición puede ser dentro
+        de drops o en marketplace comprándolo a otro usuario.
     </p>
 </section>
-<section class="nftcollection">
+<section class="nftcollection" [ngClass]="{'expanded': expanded}">
     <h2>NFT COLLECTIONS</h2>
+    <div>
+
+    </div>
     <div class="collection1">
         <div class="one">
-            <img src="" alt="">
+            <img src="/assets/images/0505.png" class='imgteam' alt="galgosfoto">
             <ul>
-                <li>Galgos</li>
-                <li>Tijuana</li>
+                <li class="team">Galgos</li>
+                <li class="place">Tijuana</li>
             </ul>
         </div>
-        <div class="two">x</div>
-        <div class="three"></div>
-        <div class="four"></div>
-        <div class="five"></div>
+        <div class="two">
+            <img src="/assets/images/0101.png" class='imgteam' alt="gallossfoto">
+            <ul>
+                <li class="team">Gallos negros</li>
+                <li class="place">Queretaro</li>
+            </ul>
+        </div>
+        <div class="three">
+            <img src="/assets/images/0606.png" class='imgteam' alt="raptorsfoto">
+            <ul>
+                <li class="team">Raptors</li>
+                <li class="place">Valle de mexico</li>
+            </ul>
+        </div>
+        <div class="four">
+            <img src="/assets/images/0303.png" class='imgteam' alt="fundidoresfoto">
+            <ul>
+                <li class="team">Fundidores</li>
+                <li class="place">Monterrey</li>
+            </ul>
+        </div>
+        <div class="five">
+            <img src="/assets/images/0404.png" class='imgteam' alt="Dinosfoto">
+            <ul>
+                <li class="team">Dinos</li>
+                <li class="place">Saltillo</li>
+            </ul>
+        </div>
     </div>
+    <div class="collection2" *ngIf="expanded">
+        <div class="one">
+            <img src="/assets/images/0505.png" class='imgteam' alt="galgosfoto">
+            <ul>
+                <li class="team">Jefes</li>
+                <li class="place">Juarez</li>
+            </ul>
+        </div>
+        <div class="two">
+            <img src="/assets/images/0101.png" class='imgteam' alt="gallossfoto">
+            <ul>
+                <li class="team">Reyes</li>
+                <li class="place">Jalisco</li>
+            </ul>
+        </div>
+        <div class="three">
+            <img src="/assets/images/0606.png" class='imgteam' alt="raptorsfoto">
+            <ul>
+                <li class="team">Mexicas</li>
+                <li class="place">CDMX</li>
+            </ul>
+        </div>
+        <div class="four">
+            <img src="/assets/images/0303.png" class='imgteam' alt="fundidoresfoto">
+            <ul>
+                <li class="team">Caudillos</li>
+                <li class="place">Chihuahua</li>
+            </ul>
+        </div>
+        <div class="five">
+            <img src="/assets/images/0404.png" class='imgteam' alt="Dinosfoto">
+            <ul>
+                <li class="team">Dinos</li>
+                <li class="place">Saltillo</li>
+            </ul>
+        </div>
+    </div>
+    <button (click)="toggleSection()" [innerText]="buttonText"></button>
 </section>
-<section class="drops">
 
+
+<section class="drops">
+    <h2>DROPS</h2>
+    <div class="buttons">
+        <button class="part" (click)="changeContent('part1')">Overview</button>
+        <button class="part" (click)="changeContent('part2')">In stock</button>
+        <button class="part" (click)="changeContent('part3')">Sold Out</button>
+    </div>
+
+    <div class="content">
+        <!-- Contenido dinámico que cambiará según la parte seleccionada -->
+        <div clas="overview" *ngIf="selectedPart === 'part1'">
+            <h3>Overview</h3>
+            <div class="overviewbox1">
+                <img src="/assets/images/image-76.png" class='imgnftpack' alt="">
+                <div class="infopack">
+                    <div class="titlepack">NFT PACK <img src="/assets/images/heart-solid.png" alt=""></div>
+                    <div class="packcontent">1 Legendario, 2 raros, 1 comun</div>
+                    <div class="packcost">
+                        <span class="currency">$</span>
+                        <span class="amount">50</span>
+                        <span class="unit"> USD</span>
+                        <div class="stars">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="no-star">&#9733;</span>
+                        </div>
+                    </div>
+                    <div class="btns-buy">
+                        <button class="square-btn"><img src="/assets/images/Vector.png" alt=""></button>
+                        <button class="buy-now">BUY NOW</button>
+                    </div>
+                </div>
+            </div>
+            <div class="overviewbox2">
+                <img src="/assets/images/image-76.png" class='imgnftpack' alt="">
+                <div class="infopack">
+                    <div class="titlepack">NFT PACK <img src="/assets/images/heart-solid.png" alt=""></div>
+                    <div class="packcontent">1 Legendario, 2 raros, 1 comun</div>
+                    <div class="packcost">
+                        <span class="currency">$</span>
+                        <span class="amount">50</span>
+                        <span class="unit"> USD</span>
+                        <div class="stars">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="no-star">&#9733;</span>
+                        </div>
+                    </div>
+                    <div class="btns-buy">
+                        <button class="square-btn"><img src="/assets/images/Vector.png" alt=""></button>
+                        <button class="buy-now">BUY NOW</button>
+                    </div>
+                </div>
+            </div>
+            <div class="overviewbox3">
+                <img src="/assets/images/image-76.png" class='imgnftpack' alt="">
+                <div class="infopack">
+                    <div class="titlepack">NFT PACK <img src="/assets/images/heart-solid.png" alt=""></div>
+                    <div class="packcontent">1 Legendario, 2 raros, 1 comun</div>
+                    <div class="packcost">
+                        <span class="currency">$</span>
+                        <span class="amount">50</span>
+                        <span class="unit"> USD</span>
+                        <div class="stars">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="no-star">&#9733;</span>
+                        </div>
+                    </div>
+                    <div class="btns-buy">
+                        <button class="square-btn"><img src="/assets/images/Vector.png" alt=""></button>
+                        <button class="buy-now">BUY NOW</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div *ngIf="selectedPart === 'part2'">
+            <h3>IN STOCK</h3>
+            <div class="stockbox">
+                x
+            </div>
+        </div>
+        <div *ngIf="selectedPart === 'part3'">
+            <h3>SOLD OUT</h3>
+            <div class="soldoutbox">
+                x
+            </div>
+        </div>
+    </div>
 </section>
