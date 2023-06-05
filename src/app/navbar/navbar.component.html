@@ -1,20 +1,22 @@
+<router-outlet></router-outlet>
 <nav class="navbar fixed-top navbar-expand-lg navbar-light ">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Navbar</a>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" routerLink="/" aria-current="true">Home</a>
+          <a class="nav-link" routerLink="/home" aria-current="true">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/app/Marketplace" aria-current="true">Marketplace</a>
+          <a class="nav-link" routerLink="/marketplace" aria-current="true">Marketplace</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#" aria-current="true">Challenges</a>
+          <a class="nav-link" href="#" aria-current="true" routerLink="challenges">Challenges</a>
         </li>
 
       </ul>
-      <button class="btn btn-transparent" id="botonlog">Login/Register</button>
+      <button class="btn btn-transparent" id="botonlog" routerLink="login">Login/Register</button>
     </div>
   </div>
 </nav>
+

@@ -1,6 +1,10 @@
 * {
   color: white;
 }
+
+*, ::after, ::before {
+   box-sizing:content-box;
+}
 #marketplace {
   background-color: #000000;
 }
@@ -83,6 +87,16 @@
   justify-content: space-between;
 }
 
+#text{
+  width: 50%;
+  margin: auto;
+}
+
+#text p{
+  display: flex;
+  justify-content: space-between;
+}
+
 #seller{
   display: flex;
   flex-wrap: wrap;
@@ -104,6 +118,7 @@
 
 #recent{
   border: 2px solid;
+  border-radius: 3%;
   margin: auto;
   display: flex;
   flex-direction: column;
