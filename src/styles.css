@@ -7,8 +7,8 @@
   src: url(assets/fonts/Poppins-Regular.ttf);  
 }
 @font-face{
-  font-family: Roboto-Regular;
-  src: url(assets/fonts/Roboto-Regular.ttf);
+  font-family: Roboto-BoldItalic;
+  src: url(assets/fonts/Roboto-BoldItalic.ttf);
 }
 body{
   background-color: #000000;
