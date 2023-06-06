@@ -1,21 +1,175 @@
+<section><app-navbar></app-navbar></section>
 <div id="marketplace">
-  <div id="pt1">
-  <h2>EXPLORE THE MARKETPLACE</h2>
-  <input type="text">
-  </div>
-  <div id="types">
-    <p>TIPOS DE DROPS</p>
-    <div id="drops">
-      <div><img src="assets/images/azul.png" alt=""><p>Legendario</p><p>3.07%</p></div>
-      <div><img src="assets/images/rojo.png" alt=""><p>Raro</p><p>9.74%</p></div>
-      <div><img src="assets/images/amarillo.png" alt=""><p>Fanatico</p><p>25.64%</p></div>
-      <div><img src="assets/images/morado.png" alt=""><p>Normal</p><p>61.53%</p></div>
+  <section>
+    <div id="pt1">
+      <h2>EXPLORE THE MARKETPLACE</h2>
+      <input type="text" />
     </div>
-  </div>
-  <div id="gallery">
-    <button>Todos</button><button>Legendarios</button><button>Raros</button><button>Fanatico</button><button>Normal</button>
-    <div id="dropslist">
-
+    <div id="types">
+      <p>TIPOS DE DROPS</p>
+      <div id="drops">
+        <div>
+          <img src="assets/images/azul.png" alt="" />
+          <p>Legendario</p>
+          <p>3.07%</p>
+        </div>
+        <div>
+          <img src="assets/images/rojo.png" alt="" />
+          <p>Raro</p>
+          <p>9.74%</p>
+        </div>
+        <div>
+          <img src="assets/images/amarillo.png" alt="" />
+          <p>Fanatico</p>
+          <p>25.64%</p>
+        </div>
+        <div>
+          <img src="assets/images/Fundidores.png" alt="" />
+          <p>Normal</p>
+          <p>61.53%</p>
+        </div>
+      </div>
     </div>
-  </div>
+  </section>
+  <section>
+    <div id="gallery">
+      <button>Todos</button>
+      <button>Legendarios</button>
+      <button>Raros</button>
+      <button>Fanatico</button>
+      <button>Normal</button>
+    </div>
+    <div id="dropslist" *ngFor="let y of ciclo">
+      <div class="products" *ngFor="let x of num">
+        <img src="{{ images[+x] }}" alt="" />
+        <div id="desc">
+          <p>{{ text[+x].type }}</p>
+          <h2>{{ text[+x].title }}</h2>
+          <p>{{ text[+x].desc }}</p>
+        </div>
+        <div id="foot">
+          <p>
+            {{ text[+x].low }} <span>{{ text[+x].price }}</span>
+          </p>
+          <p>
+            {{ text[+x].avg }} <span>{{ text[+x].avgP }}</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <h1>MEJORES VENDIDOS</h1>
+    <div id="seller">
+      <div id="best">
+        <img src="assets/images/0101.png" alt="" />
+        <div id="text">
+          <p>{{ text[0].type }}</p>
+          <h2>{{text[0].title}}</h2>
+          <p>{{text[0].desc}}</p>
+          <p>{{text[0].low}} <span>{{text[0].price}}</span></p>
+          <p>{{text[0].avg}} <span>{{text[0].avgP}}</span></p>
+        </div>
+      </div>
+      <div id="best">
+        <img src="assets/images/0202.png" alt="" />
+        <div id="text">
+          <p>{{ text[1].type }}</p>
+          <h2>{{text[1].title}}</h2>
+          <p>{{text[1].desc}}</p>
+          <p>{{text[1].low}} <span>{{text[1].price}}</span></p>
+          <p>{{text[1].avg}} <span>{{text[1].avgP}}</span></p>
+        </div>
+      </div>
+      <div id="best">
+        <img src="assets/images/0303.png" alt="" />
+        <div id="text">
+          <p>{{ text[2].type }}</p>
+          <h2>{{text[2].title}}</h2>
+          <p>{{text[2].desc}}</p>
+          <p>{{text[2].low}} <span>{{text[2].price}}</span></p>
+          <p>{{text[2].avg}} <span>{{text[2].avgP}}</span></p>
+        </div>
+      </div>
+      <div id="best">
+        <img src="assets/images/0404.png" alt="" />
+        <div id="text">
+          <p>{{ text[3].type }}</p>
+          <h2>{{text[3].title}}</h2>
+          <p>{{text[3].desc}}</p>
+          <p>{{text[3].low}} <span>{{text[3].price}}</span></p>
+          <p>{{text[3].avg}} <span>{{text[3].avgP}}</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <h1>COMPRADO RECIENTEMENTE</h1>
+    <div id="seller">
+      <div id="recent">
+        <img src="assets/images/0101.png" alt="" />
+        <div id="text2">
+          <p>{{ text[0].type }}</p>
+          <h2>{{text[0].title}}</h2>
+          <p>{{text[0].desc}}</p>
+        </div>
+        <div id="foot">
+          <p>
+            {{ text[0].low }} <span>{{ text[0].price }}</span>
+          </p>
+          <p>
+            {{ text[0].avg }} <span>{{ text[0].avgP }}</span>
+          </p>
+        </div>
+      </div>
+      <div id="recent">
+        <img src="assets/images/0202.png" alt="" />
+        <div id="text2">
+          <p>{{ text[1].type }}</p>
+          <h2>{{text[1].title}}</h2>
+          <p>{{text[1].desc}}</p>
+        </div>
+        <div id="foot">
+          <p>
+            {{ text[1].low }} <span>{{ text[1].price }}</span>
+          </p>
+          <p>
+            {{ text[1].avg }} <span>{{ text[1].avgP }}</span>
+          </p>
+        </div>
+      </div>
+      <div id="recent">
+        <img src="assets/images/0303.png" alt="" />
+        <div id="text2">
+          <p>{{ text[2].type }}</p>
+          <h2>{{text[2].title}}</h2>
+          <p>{{text[2].desc}}</p>
+        </div>
+        <div id="foot">
+          <p>
+            {{ text[2].low }} <span>{{ text[2].price }}</span>
+          </p>
+          <p>
+            {{ text[2].avg }} <span>{{ text[2].avgP }}</span>
+          </p>
+        </div>
+      </div>
+      <div id="recent">
+        <img src="assets/images/0404.png" alt="" />
+        <div id="text2">
+          <p>{{ text[3].type }}</p>
+          <h2>{{text[3].title}}</h2>
+          <p>{{text[3].desc}}</p>
+        </div>
+        <div id="foot">
+          <p>
+            {{ text[3].low }} <span>{{ text[3].price }}</span>
+          </p>
+          <p>
+            {{ text[3].avg }} <span>{{ text[3].avgP }}</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 </div>
