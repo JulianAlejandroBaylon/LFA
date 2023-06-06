@@ -1,0 +1,58 @@
+.background {
+    background-color: #0B0B0B;
+    background-image: url(/assets/images/image-81.png);
+    background-size: 70%;
+    background-position: 100% 100%;
+    width: 100vw;
+    height: 100vh;
+    
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+}
+
+.container {
+    width: 45%;
+    height: 60%;
+    color: white;
+    font-family: 'Poppins-Regular';
+    margin: -5% 0% 0% 0%;
+}
+
+.container h2 {
+    font-family: 'American-Captain';
+    color: white;
+    font-size: 4rem;
+    margin-left: 15%;
+    margin-bottom: 3.5rem;
+}
+
+.forms {
+    margin-left: 15%;
+}
+
+.btn {
+    font-family: 'Roboto-BoldCondensed';
+    background-color: rgb(15, 224, 15);
+    border: none;
+    width: 100%;
+    margin: 4% 0% 4% 0%;
+}
+
+.form-group {
+    margin-top: 5%;
+}
+
+.form-control {
+    background-color: rgba(73, 75, 73, 0.577);
+    color: white;
+}
+label{
+    color: white;
+}
+::placeholder{
+    color: white;
+}
+.haveaccount{
+    color: gray;
+}
