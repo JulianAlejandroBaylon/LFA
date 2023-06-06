@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { MarketplaceComponent } from './marketplace/marketplace.component';
-import { AppRoutingModule } from './app-routing.module';
+
 import { LoginComponent } from './login/login.component';
 import { SignComponent } from './sign/sign.component';
 import { FooterComponent } from './footer/footer.component';
@@ -33,7 +33,7 @@ const routes: Routes = [
     FooterComponent,
     ChallengesComponent
   ],
-  imports: [BrowserModule, AppRoutingModule, RouterModule.forRoot(routes)],
+  imports: [BrowserModule, RouterModule.forRoot(routes)],
   exports: [RouterModule],
   providers: [],
   bootstrap: [AppComponent],
