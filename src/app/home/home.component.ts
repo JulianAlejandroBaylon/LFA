@@ -13,9 +13,9 @@ export class HomeComponent {
     this.expanded = !this.expanded;
 
     if (this.expanded) {
-      this.buttonText = 'Mostrar menos';
+      this.buttonText = 'MOSTRAR MENOS';
     } else {
-      this.buttonText = 'Load More';
+      this.buttonText = 'MOSTRAR MAS';
     }
   }
   selectedPart: string = 'part1';

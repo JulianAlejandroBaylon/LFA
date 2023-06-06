@@ -167,7 +167,13 @@ h1 {
 .nftcollection p {
     margin: 0;
 }
-
+.nftcollection button{
+  background: transparent;
+    color: white;
+    border: 1px solid;
+    width: 10%;
+    font-size: 80%;
+}
 .team {
     font-family: 'Poppins-Regular';
     font-size: 1.3vw;
