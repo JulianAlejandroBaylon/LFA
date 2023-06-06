@@ -1,30 +1,93 @@
-* {
+.contentchallenges {
   background-color: #000000;
+  background-image: url('/assets/images/backchallenges.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.pt1 #text {
-  width: 100%;
-  height: 80vh;
+.section1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  height: 40vh;
+}
+
+#text h2 {
   text-align: center;
+  font-family: 'Rubik-SemiBold';
+}
+
+#text p {
+  text-align: justify;
+  font-family: 'Rubik-Regular';
+  font-size: 2vw;
+}
+
+.line {
+  width: 100%;
+  height: 0%;
+  left: 414px;
+  transform: rotate(0.2deg);
+  border: 2px solid red;
+}
+
+#textbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  width: 70%;
 }
 
 .challenge {
-  border: 4px solid #ffffff;
-  margin: auto;
+  border: 1px solid #ffffff;
   height: 50vh;
   border-radius: 15px;
-  width: 80%;
+  width: 100%;
   display: flex;
+  box-shadow: #ffffff;
+  margin-bottom: 10%;
 }
 
-.challenge img {
+.imgon {
   margin: auto;
-  width: 10%;
-  height: 50%;
+  width: 20%;
+  height: 55%;
   border-top: 2px solid white;
 }
-.challenge #text {
+
+.challenge #textbox {
   width: 70%;
   margin: 0 auto 0 auto;
+  font-family: 'Rubik-Bold';
+}
+.btns{
+  width: 100%;
+  margin-left: 50%;
+  margin-top: 5%;
+}
+.btn-gradient {
+  background-image: linear-gradient(to right, #00ff00, #ff0000);
+  border: none;
+  width: 30%;
+}
+.unlockbtn{
+  font-family: 'Poppins-Regular';
+  background: none;
+  color: white;
+  border: none;
+  text-decoration: underline;
+  font-size: 1.5vw;
+  width: 30%;
+}
+.circles{
+  width: 20vw;
+  margin-left: 20%;
 }
