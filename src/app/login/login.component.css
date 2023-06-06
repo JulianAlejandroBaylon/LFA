@@ -1,0 +1,82 @@
+.background {
+    background-color: #0B0B0B;
+    background-image: url(/assets/images/yardsimg.png);
+    width: 100vw;
+    height: 100vh;
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    width: 60%;
+    height: 60%;
+    border-radius: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    overflow: hidden;
+    color: white;
+    font-family: 'Poppins-Regular';
+}
+
+.container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(/assets/images/image-82.png) no-repeat 100%/70%;
+    filter: blur(3px);
+    opacity: 1;
+}
+
+.container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.035) 100%);
+}
+
+.container > * {
+    position: relative;
+    z-index: 1;
+}
+
+.container h2{
+    font-family: 'American-Captain';
+    color: white;
+    font-size: 4rem;
+    margin-left: 5%;
+}
+.forms {
+    display: flex;
+    flex-direction: column;
+    width: 50%;    
+    margin-left: 5%;
+}
+
+.btn {
+    font-family: 'Roboto-BoldCondensed';
+    background-color: rgb(15, 224, 15);
+    border: none;
+}
+.form-group{
+    margin-top: 5%;
+}
+.form-control{
+    background-color: rgba(73, 75, 73, 0.577);
+    color: white;
+}
+::placeholder{
+    color: white;
+}
+.haveaccount{
+    color: gray;
+}
