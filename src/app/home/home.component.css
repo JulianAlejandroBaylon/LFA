@@ -258,7 +258,7 @@ h1 {
 .overviewbox1 {
     display: flex;
     position: relative;
-    margin: 0 auto;
+    margin-bottom: 10%;
     z-index: 0;
     justify-content: center;
     align-items: center;
@@ -268,7 +268,7 @@ h1 {
     content: "";
     position: absolute;
     inset: 0;
-    border-radius: 20px;
+    border-radius: 10px;
     padding: 2px;
     z-index: -1;
     /* Valor inferior al del div principal */
@@ -286,7 +286,7 @@ h1 {
 }
 
 .infopack {
-    width: 50%;
+    width: 80%;
     height: 100%;
 }
 
@@ -297,7 +297,7 @@ h1 {
 }
 
 .titlepack img {
-    width: 10%;
+    width: 5%;
     margin-left: 30%;
 }
 
@@ -340,7 +340,9 @@ h1 {
     color: rgb(85, 64, 21);
     font-size: 24px;
 }
-
+.btns-buy{
+    width: 100%;
+}
 .square-btn {
     width: 2.5vw;
     height: 2.5vw;
@@ -368,7 +370,7 @@ h1 {
 .overviewbox2 {
     display: flex;
     position: relative;
-    margin: 0 auto;
+    margin-bottom: 10%;
     z-index: 0;
     justify-content: center;
     align-items: center;
@@ -378,11 +380,11 @@ h1 {
     content: "";
     position: absolute;
     inset: 0;
-    border-radius: 20px;
+    border-radius: 10px;
     padding: 2px;
     z-index: -1;
     /* Valor inferior al del div principal */
-    background: linear-gradient(45deg, #FF1CF7 2.26%, #8800ff 100%);
+    background: linear-gradient(45deg, #1cff2f 2.26%, #01840c 100%);
     -webkit-mask:
         linear-gradient(#fff 0 0) content-box,
         linear-gradient(#fff 0 0);
@@ -393,7 +395,7 @@ h1 {
 .overviewbox3 {
     display: flex;
     position: relative;
-    margin: 0 auto;
+    margin-bottom: 10%;
     z-index: 0;
     justify-content: center;
     align-items: center;
@@ -403,7 +405,76 @@ h1 {
     content: "";
     position: absolute;
     inset: 0;
-    border-radius: 20px;
+    border-radius: 10px;
+    padding: 2px;
+    z-index: -1;
+    /* Valor inferior al del div principal */
+    background: linear-gradient(45deg, #fa8f0d 2.26%, #ffffff 100%);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+}
+
+/*IN STOCK*/
+.stock {
+    width: 55%;
+    display: flex;
+    flex-wrap: wrap;
+    /* margin: 0 auto; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.in-stock{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#infopack-stock1{
+    margin: 20%;
+}
+#infopack-stock2{
+    margin: 20%;
+}
+#infopack-stock3{
+    margin: 20%;
+}
+#infopack-stock4{
+    margin: 20%;
+}
+.stockbox{
+    width: 35%;
+    display: flex;
+    position: relative;
+    margin: 2% auto;
+    z-index: 0;
+    align-items: center;
+    flex-direction: column;
+}
+.stockbox1::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 10px;
+    padding: 2px;
+    z-index: -1;
+    /* Valor inferior al del div principal */
+    background: linear-gradient(45deg, #ff8a1c 2.26%, #ff00fb 100%);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+}
+.stockbox2::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 10px;
     padding: 2px;
     z-index: -1;
     /* Valor inferior al del div principal */
@@ -414,12 +485,37 @@ h1 {
     -webkit-mask-composite: xor;
     mask-composite: exclude;
 }
-
-.stockbox {
-    background-color: blue;
-    width: 50%;
+.stockbox3::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 10px;
+    padding: 2px;
+    z-index: -1;
+    /* Valor inferior al del div principal */
+    background: linear-gradient(45deg, #241cff 2.26%, #ff0000 100%);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
 }
-
+.stockbox4::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 10px;
+    padding: 2px;
+    z-index: -1;
+    /* Valor inferior al del div principal */
+    background: linear-gradient(45deg, #ffff1c 2.26%, #00ff15 100%);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+}
+/*SOLD OUT*/
 .soldoutbox {
     background-color: blue;
     width: 50%;

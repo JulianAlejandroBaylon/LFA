@@ -106,7 +106,6 @@
     </div>
 
     <div class="content">
-        <!-- Contenido dinámico que cambiará según la parte seleccionada -->
         <div clas="overview" *ngIf="selectedPart === 'part1'">
             <h3>Overview</h3>
             <div class="overviewbox1">
@@ -179,10 +178,101 @@
                 </div>
             </div>
         </div>
-        <div *ngIf="selectedPart === 'part2'">
+        <div class='in-stock' *ngIf="selectedPart === 'part2'">
             <h3>IN STOCK</h3>
-            <div class="stockbox">
-                x
+            <div class="stock">
+                <div class="stockbox stockbox1">
+                    <img src="/assets/images/image-76.png" class='imgnftpack' alt="">
+                    <div class="infopack" id="infopack-stock1">
+                        <div class="titlepack">NFT PACK <img src="/assets/images/heart-solid.png" alt=""></div>
+                        <div class="packcontent">1 Legendario, 2 raros, 1 comun</div>
+                        <div class="packcost">
+                            <span class="currency">$</span>
+                            <span class="amount">50</span>
+                            <span class="unit"> USD</span>
+                            <div class="stars">
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="no-star">&#9733;</span>
+                            </div>
+                        </div>
+                        <div class="btns-buy">
+                            <button class="square-btn"><img src="/assets/images/Vector.png" alt=""></button>
+                            <button class="buy-now">BUY NOW</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="stockbox stockbox2">
+                    <img src="/assets/images/image-76.png" class='imgnftpack' alt="">
+                    <div class="infopack" id="infopack-stock2">
+                        <div class="titlepack">NFT PACK <img src="/assets/images/heart-solid.png" alt=""></div>
+                        <div class="packcontent">1 Legendario, 2 raros, 1 comun</div>
+                        <div class="packcost">
+                            <span class="currency">$</span>
+                            <span class="amount">50</span>
+                            <span class="unit"> USD</span>
+                            <div class="stars">
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="no-star">&#9733;</span>
+                            </div>
+                        </div>
+                        <div class="btns-buy">
+                            <button class="square-btn"><img src="/assets/images/Vector.png" alt=""></button>
+                            <button class="buy-now">BUY NOW</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="stockbox stockbox3">
+                    <img src="/assets/images/image-76.png" class='imgnftpack' alt="">
+                    <div class="infopack" id="infopack-stock3">
+                        <div class="titlepack">NFT PACK <img src="/assets/images/heart-solid.png" alt=""></div>
+                        <div class="packcontent">1 Legendario, 2 raros, 1 comun</div>
+                        <div class="packcost">
+                            <span class="currency">$</span>
+                            <span class="amount">50</span>
+                            <span class="unit"> USD</span>
+                            <div class="stars">
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="no-star">&#9733;</span>
+                            </div>
+                        </div>
+                        <div class="btns-buy">
+                            <button class="square-btn"><img src="/assets/images/Vector.png" alt=""></button>
+                            <button class="buy-now">BUY NOW</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="stockbox stockbox4">
+                    <img src="/assets/images/image-76.png" class='imgnftpack' alt="">
+                    <div class="infopack" id="infopack-stock4">
+                        <div class="titlepack">NFT PACK <img src="/assets/images/heart-solid.png" alt=""></div>
+                        <div class="packcontent">1 Legendario, 2 raros, 1 comun</div>
+                        <div class="packcost">
+                            <span class="currency">$</span>
+                            <span class="amount">50</span>
+                            <span class="unit"> USD</span>
+                            <div class="stars">
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="no-star">&#9733;</span>
+                            </div>
+                        </div>
+                        <div class="btns-buy">
+                            <button class="square-btn"><img src="/assets/images/Vector.png" alt=""></button>
+                            <button class="buy-now">BUY NOW</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div *ngIf="selectedPart === 'part3'">
