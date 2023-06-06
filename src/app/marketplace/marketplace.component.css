@@ -27,18 +27,28 @@
   width: 70%;
   height: 55%;
   margin: 2vw 0 0px 0px;
+
 }
 
 #drops div {
   text-align: center;
   font-weight: 700;
   font-size: 2vw;
+  margin: auto;
 }
 
 #gallery {
   display: flex;
-  text-align: center;
-  justify-content: center;
+    text-align: center;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+}
+
+#gallery button{
+  margin: auto;
+    background: black;
+    background-image: linear-gradient(113deg, #07D01B 0%, #D31E1E 100%, transparent);
 }
 
 #dropslist {
@@ -67,6 +77,27 @@
 .products img{
   width: 65%;
     margin: 10% auto auto auto;
+}
+
+.raro{
+  background-color: #1b57a336;
+}
+
+.normal{
+  background-color: #ffffff3d;
+}
+
+.fanatico{
+  background-color: #ff000042;
+}
+
+.legendario{
+  backdrop-filter: blur(27px);
+    background-color: #efb81087;
+}
+
+.disable{
+  display: none;
 }
 
 #desc{

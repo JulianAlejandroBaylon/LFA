@@ -14,8 +14,6 @@ import { ChallengesComponent } from './challenges/challenges.component';
 
 
 const routes: Routes = [
-  { path: '', redirectTo: '/home', pathMatch: 'full' }, // Ruta por defecto
-  { path: 'home', component: HomeComponent },
   { path: 'marketplace', component: MarketplaceComponent },
   { path: 'challenges', component: ChallengesComponent },
   { path: 'login', component: LoginComponent },

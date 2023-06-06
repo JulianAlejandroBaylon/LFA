@@ -18,13 +18,19 @@
   display: flex;
 }
 
-.challenge img {
-  margin: auto;
+.challenge #image{
   width: 10%;
   height: 50%;
+  display: flex;
+  margin: auto;
   border-top: 2px solid white;
+  border-bottom: 2px solid;
+}
+.challenge #image img {
+  margin: auto;
+  width: 90%;
+  height: 90%;
 }
 .challenge #text {
   width: 70%;
-  margin: 0 auto 0 auto;
 }

@@ -9,22 +9,22 @@
       <p>TIPOS DE DROPS</p>
       <div id="drops">
         <div>
-          <img src="assets/images/azul.png" alt="" />
+          <img src="assets/images/0101.png" alt="" />
           <p>Legendario</p>
           <p>3.07%</p>
         </div>
         <div>
-          <img src="assets/images/rojo.png" alt="" />
+          <img src="assets/images/0202.png" alt="" />
           <p>Raro</p>
           <p>9.74%</p>
         </div>
         <div>
-          <img src="assets/images/amarillo.png" alt="" />
+          <img src="assets/images/0303.png" alt="" />
           <p>Fanatico</p>
           <p>25.64%</p>
         </div>
         <div>
-          <img src="assets/images/Fundidores.png" alt="" />
+          <img src="assets/images/0404.png" alt="" />
           <p>Normal</p>
           <p>61.53%</p>
         </div>
@@ -39,20 +39,260 @@
       <button>Fanatico</button>
       <button>Normal</button>
     </div>
-    <div id="dropslist" *ngFor="let y of ciclo">
-      <div class="products" *ngFor="let x of num">
-        <img src="{{ images[+x] }}" alt="" />
+    <div id="dropslist">
+      <div class="products raro">
+        <img src="/assets/images/0101.png" alt="" />
         <div id="desc">
-          <p>{{ text[+x].type }}</p>
-          <h2>{{ text[+x].title }}</h2>
-          <p>{{ text[+x].desc }}</p>
+          <p>Raro #/0101</p>
+          <h2>LUIS TINOCO</h2>
+          <p>Assist - Dec 07 2022, Base set (Series 4), Vortex, CHI</p>
         </div>
         <div id="foot">
           <p>
-            {{ text[+x].low }} <span>{{ text[+x].price }}</span>
+            Lowest Ask <span>USD $1.00</span>
           </p>
           <p>
-            {{ text[+x].avg }} <span>{{ text[+x].avgP }}</span>
+           Avg Sale <span>USD $1.05</span>
+          </p>
+        </div>
+      </div>
+      <div class="products normal">
+        <img src="/assets/images/0202.png" alt="" />
+        <div id="desc">
+          <p>Normal #/0202</p>
+          <h2>ISAIAH SOMBRITE</h2>
+          <p>3 pointer - Jan 30 2021, Base Set (Series 2), POR</p>
+        </div>
+        <div id="foot">
+          <p>
+            Lowest Ask <span>USD $2.00</span>
+          </p>
+          <p>
+           Avg Sale <span>USD $1.58</span>
+          </p>
+        </div>
+      </div>
+      <div class="products fanatico">
+        <img src="/assets/images/0303.png" alt="" />
+        <div id="desc">
+          <p>Fanatico #/0303</p>
+          <h2>SHELTON EPPLER</h2>
+          <p>Reel - Oct 27 2022, Video Game Numbers (Series 4), DAL</p>
+        </div>
+        <div id="foot">
+          <p>
+            Lowest Ask <span>USD $2.00</span>
+          </p>
+          <p>
+           Avg Sale <span>USD $1.58</span>
+          </p>
+        </div>
+      </div>
+      <div class="products legendario" >
+        <img src="/assets/images/0404.png" alt="" />
+        <div id="desc">
+          <p>Legendario #/0404</p>
+          <h2>CORAY WILLIAMS</h2>
+          <p>Handles - Nov 23 2022, The Challenge: Icon (Series 4), LAL</p>
+        </div>
+        <div id="foot">
+          <p>
+            Lowest Ask <span>USD $10.00</span>
+          </p>
+          <p>
+           Avg Sale <span>USD $11.75</span>
+          </p>
+        </div>
+      </div>
+      <div class="products raro" >
+        <img src="/assets/images/0505.png" alt="" />
+        <div id="desc">
+          <p>Raro #/0505</p>
+          <h2>ELDRIGE THOMPSON</h2>
+          <p>Dunk - Nov 30 2022, The Challenge: Icon (Series 4), LAL</p>
+        </div>
+        <div id="foot">
+          <p>
+            Lowest Ask <span>USD $11.00</span>
+          </p>
+          <p>
+           Avg Sale <span>USD $8.38</span>
+          </p>
+        </div>
+      </div>
+      <div class="products normal" >
+        <img src="/assets/images/0606.png" alt="" />
+        <div id="desc">
+          <p>Normal #/0606</p>
+          <h2>BRIAN BURNETT JR</h2>
+          <p>Layup - Nov 18 2022, Base Set (Series 4), Rippled, CHA</p>
+        </div>
+        <div id="foot">
+          <p>
+            Lowest Ask <span>USD $2.00</span>
+          </p>
+          <p>
+           Avg Sale <span>USD $1.06</span>
+          </p>
+        </div>
+      </div>
+      <div class="products fanatico" >
+        <img src="/assets/images/0707.png" alt="" />
+        <div id="desc">
+          <p>Fanatico #/0707</p>
+          <h2>KOBE RODGERS</h2>
+          <p>Assist - Oct 21 2021, Fresh Threads (Series 3), LAC</p>
+        </div>
+        <div id="foot">
+          <p>
+            Lowest Ask <span>USD $2.00</span>
+          </p>
+          <p>
+           Avg Sale <span>USD $1.23</span>
+          </p>
+        </div>
+      </div>
+      <div class="products legendario">
+        <img src="/assets/images/0808.png" alt="" />
+        <div id="desc">
+          <p>Legendario  #/0808</p>
+          <h2>JORGE LUIS REVUELTO</h2>
+          <p>Jump Shot - Jul 29 2022, For the Cup (Series 4), LVA</p>
+        </div>
+        <div id="foot">
+          <p>
+            Lowest Ask <span>USD $2.00</span>
+          </p>
+          <p>
+           Avg Sale <span>USD $1.23</span>
+          </p>
+        </div>
+      </div>
+      <div class="products raro">
+        <img src="/assets/images/0101.png" alt="" />
+        <div id="desc">
+          <p>Raro #/0101</p>
+          <h2>LUIS TINOCO</h2>
+          <p>Assist - Dec 07 2022, Base set (Series 4), Vortex, CHI</p>
+        </div>
+        <div id="foot">
+          <p>
+            Lowest Ask <span>USD $1.00</span>
+          </p>
+          <p>
+           Avg Sale <span>USD $1.05</span>
+          </p>
+        </div>
+      </div>
+      <div class="products normal">
+        <img src="/assets/images/0202.png" alt="" />
+        <div id="desc">
+          <p>Normal #/0202</p>
+          <h2>ISAIAH SOMBRITE</h2>
+          <p>3 pointer - Jan 30 2021, Base Set (Series 2), POR</p>
+        </div>
+        <div id="foot">
+          <p>
+            Lowest Ask <span>USD $2.00</span>
+          </p>
+          <p>
+           Avg Sale <span>USD $1.58</span>
+          </p>
+        </div>
+      </div>
+      <div class="products fanatico">
+        <img src="/assets/images/0303.png" alt="" />
+        <div id="desc">
+          <p>Fanatico #/0303</p>
+          <h2>SHELTON EPPLER</h2>
+          <p>Reel - Oct 27 2022, Video Game Numbers (Series 4), DAL</p>
+        </div>
+        <div id="foot">
+          <p>
+            Lowest Ask <span>USD $2.00</span>
+          </p>
+          <p>
+           Avg Sale <span>USD $1.58</span>
+          </p>
+        </div>
+      </div>
+      <div class="products legendario" >
+        <img src="/assets/images/0404.png" alt="" />
+        <div id="desc">
+          <p>Legendario #/0404</p>
+          <h2>CORAY WILLIAMS</h2>
+          <p>Handles - Nov 23 2022, The Challenge: Icon (Series 4), LAL</p>
+        </div>
+        <div id="foot">
+          <p>
+            Lowest Ask <span>USD $10.00</span>
+          </p>
+          <p>
+           Avg Sale <span>USD $11.75</span>
+          </p>
+        </div>
+      </div>
+      <div class="products raro" >
+        <img src="/assets/images/0505.png" alt="" />
+        <div id="desc">
+          <p>Raro #/0505</p>
+          <h2>ELDRIGE THOMPSON</h2>
+          <p>Dunk - Nov 30 2022, The Challenge: Icon (Series 4), LAL</p>
+        </div>
+        <div id="foot">
+          <p>
+            Lowest Ask <span>USD $11.00</span>
+          </p>
+          <p>
+           Avg Sale <span>USD $8.38</span>
+          </p>
+        </div>
+      </div>
+      <div class="products normal" >
+        <img src="/assets/images/0606.png" alt="" />
+        <div id="desc">
+          <p>Normal #/0606</p>
+          <h2>BRIAN BURNETT JR</h2>
+          <p>Layup - Nov 18 2022, Base Set (Series 4), Rippled, CHA</p>
+        </div>
+        <div id="foot">
+          <p>
+            Lowest Ask <span>USD $2.00</span>
+          </p>
+          <p>
+           Avg Sale <span>USD $1.06</span>
+          </p>
+        </div>
+      </div>
+      <div class="products fanatico" >
+        <img src="/assets/images/0707.png" alt="" />
+        <div id="desc">
+          <p>Fanatico #/0707</p>
+          <h2>KOBE RODGERS</h2>
+          <p>Assist - Oct 21 2021, Fresh Threads (Series 3), LAC</p>
+        </div>
+        <div id="foot">
+          <p>
+            Lowest Ask <span>USD $2.00</span>
+          </p>
+          <p>
+           Avg Sale <span>USD $1.23</span>
+          </p>
+        </div>
+      </div>
+      <div class="products legendario">
+        <img src="/assets/images/0808.png" alt="" />
+        <div id="desc">
+          <p>Legendario  #/0808</p>
+          <h2>JORGE LUIS REVUELTO</h2>
+          <p>Jump Shot - Jul 29 2022, For the Cup (Series 4), LVA</p>
+        </div>
+        <div id="foot">
+          <p>
+            Lowest Ask <span>USD $2.00</span>
+          </p>
+          <p>
+           Avg Sale <span>USD $1.23</span>
           </p>
         </div>
       </div>
@@ -64,41 +304,57 @@
       <div id="best">
         <img src="assets/images/0101.png" alt="" />
         <div id="text">
-          <p>{{ text[0].type }}</p>
-          <h2>{{text[0].title}}</h2>
-          <p>{{text[0].desc}}</p>
-          <p>{{text[0].low}} <span>{{text[0].price}}</span></p>
-          <p>{{text[0].avg}} <span>{{text[0].avgP}}</span></p>
+          <p>Raro #/0101</p>
+          <h2>LUIS TINOCO</h2>
+          <p>Assist - Dec 07 2022, Base set (Series 4), Vortex, CHI</p>
+          <p>
+            Lowest Ask <span>USD $1.00</span>
+          </p>
+          <p>
+           Avg Sale <span>USD $1.05</span>
+          </p>
         </div>
       </div>
       <div id="best">
         <img src="assets/images/0202.png" alt="" />
         <div id="text">
-          <p>{{ text[1].type }}</p>
-          <h2>{{text[1].title}}</h2>
-          <p>{{text[1].desc}}</p>
-          <p>{{text[1].low}} <span>{{text[1].price}}</span></p>
-          <p>{{text[1].avg}} <span>{{text[1].avgP}}</span></p>
+          <p>Común  #/0202</p>
+          <h2>ISAIAH SOMBRITE</h2>
+          <p>3 pointer - Jan 30 2021, Base Set (Series 2), POR</p>
+          <p>
+            Lowest Ask <span>USD $1.00</span>
+          </p>
+          <p>
+           Avg Sale <span>USD $1.05</span>
+          </p>
         </div>
       </div>
       <div id="best">
         <img src="assets/images/0303.png" alt="" />
         <div id="text">
-          <p>{{ text[2].type }}</p>
-          <h2>{{text[2].title}}</h2>
-          <p>{{text[2].desc}}</p>
-          <p>{{text[2].low}} <span>{{text[2].price}}</span></p>
-          <p>{{text[2].avg}} <span>{{text[2].avgP}}</span></p>
+          <p>Legendario  #/0303</p>
+          <h2>SHELTON EPPLER</h2>
+          <p>Reel - Oct 27 2022, Video Game Numbers (Series 4), DAL</p>
+          <p>
+            Lowest Ask <span>USD $1.00</span>
+          </p>
+          <p>
+           Avg Sale <span>USD $1.05</span>
+          </p>
         </div>
       </div>
       <div id="best">
         <img src="assets/images/0404.png" alt="" />
         <div id="text">
-          <p>{{ text[3].type }}</p>
-          <h2>{{text[3].title}}</h2>
-          <p>{{text[3].desc}}</p>
-          <p>{{text[3].low}} <span>{{text[3].price}}</span></p>
-          <p>{{text[3].avg}} <span>{{text[3].avgP}}</span></p>
+          <p>Legendario  #/0404</p>
+          <h2>CORAY WILLIAMS</h2>
+          <p>Handles - Nov 23 2022, The Challenge: Icon (Series 4), LAL</p>
+          <p>
+            Lowest Ask <span>USD $10.00</span>
+          </p>
+          <p>
+           Avg Sale <span>USD $11.75</span>
+          </p>
         </div>
       </div>
     </div>
@@ -107,66 +363,66 @@
     <h1>COMPRADO RECIENTEMENTE</h1>
     <div id="seller">
       <div id="recent">
-        <img src="assets/images/0101.png" alt="" />
+        <img src="assets/images/0505.png" alt="" />
         <div id="text2">
-          <p>{{ text[0].type }}</p>
-          <h2>{{text[0].title}}</h2>
-          <p>{{text[0].desc}}</p>
+          <p>Raro #/0505</p>
+          <h2>ELDRIGE THOMPSON</h2>
+          <p>Dunk - Nov 30 2022, The Challenge: Icon (Series 4), LAL</p>
         </div>
         <div id="foot">
           <p>
-            {{ text[0].low }} <span>{{ text[0].price }}</span>
+            Lowest Ask <span>USD $11.00</span>
           </p>
           <p>
-            {{ text[0].avg }} <span>{{ text[0].avgP }}</span>
+           Avg Sale <span>USD $8.38</span>
           </p>
         </div>
       </div>
       <div id="recent">
-        <img src="assets/images/0202.png" alt="" />
+        <img src="assets/images/0606.png" alt="" />
         <div id="text2">
-          <p>{{ text[1].type }}</p>
-          <h2>{{text[1].title}}</h2>
-          <p>{{text[1].desc}}</p>
+          <p>Normal #/0606</p>
+          <h2>BRIAN BURNETT JR</h2>
+          <p>Layup - Nov 18 2022, Base Set (Series 4), Rippled, CHA</p>
         </div>
         <div id="foot">
           <p>
-            {{ text[1].low }} <span>{{ text[1].price }}</span>
+            Lowest Ask <span>USD $2.00</span>
           </p>
           <p>
-            {{ text[1].avg }} <span>{{ text[1].avgP }}</span>
+           Avg Sale <span>USD $1.06</span>
           </p>
         </div>
       </div>
       <div id="recent">
-        <img src="assets/images/0303.png" alt="" />
+        <img src="assets/images/0707.png" alt="" />
         <div id="text2">
-          <p>{{ text[2].type }}</p>
-          <h2>{{text[2].title}}</h2>
-          <p>{{text[2].desc}}</p>
+          <p>Fanatico #/0707</p>
+          <h2>KOBE RODGERS</h2>
+          <p>Assist - Oct 21 2021, Fresh Threads (Series 3), LAC</p>
         </div>
         <div id="foot">
           <p>
-            {{ text[2].low }} <span>{{ text[2].price }}</span>
+            Lowest Ask <span>USD $2.00</span>
           </p>
           <p>
-            {{ text[2].avg }} <span>{{ text[2].avgP }}</span>
+           Avg Sale <span>USD $1.23</span>
           </p>
         </div>
       </div>
       <div id="recent">
-        <img src="assets/images/0404.png" alt="" />
+        <img src="assets/images/0808.png" alt="" />
         <div id="text2">
-          <p>{{ text[3].type }}</p>
-          <h2>{{text[3].title}}</h2>
-          <p>{{text[3].desc}}</p>
+          <p>Legendario  #/0808</p>
+          <h2>JORGE LUIS REVUELTO</h2>
+          <p>Jump Shot - Jul 29 2022, For the Cup (Series 4), LVA</p>
         </div>
         <div id="foot">
           <p>
-            {{ text[3].low }} <span>{{ text[3].price }}</span>
+            Lowest Ask <span>USD $2.00</span>
           </p>
           <p>
-            {{ text[3].avg }} <span>{{ text[3].avgP }}</span>
+           Avg Sale <span>USD $1.23</span>
           </p>
         </div>
       </div>
