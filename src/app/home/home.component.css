@@ -290,6 +290,16 @@ h1 {
     font-size: 1vw;
 }
 
+.part:focus, .part:hover {
+  background-color: transparent;
+  border: none;
+  margin: 3vw 3vw 3vw 3vw;
+  font-family: 'Poppins-Regular';
+  font-size: 1vw;
+  color: white;
+  border-bottom: 2px solid #ED1C24;
+}
+
 .buttons {
     display: flex;
     justify-content: center;

@@ -3,12 +3,12 @@
   <section class="pt1">
     <div id="inicio">
       <h2>EXPLORE THE MARKETPLACE</h2>
-      <input id="search" type="text" />
+      <!--<input id="search" type="text" />-->
     </div>
   </section>
-  <section>
+  <section style="margin-top: 5%;">
     <div id="types">
-      <p>TIPOS DE DROPS</p>
+      <p style="font-size: 250%;">TIPOS DE DROPS</p>
       <div id="drops">
         <div>
           <img src="assets/images/0101.png" alt="" />
@@ -32,17 +32,17 @@
         </div>
       </div>
     </div>
-  </section>
+  </section >
   <section>
     <div id="gallery">
-      <button>Todos</button>
-      <button>Legendarios</button>
-      <button>Raros</button>
-      <button>Fanatico</button>
-      <button>Normal</button>
+      <button class="btn btn-primary btn-lg active" role="button" arria-pressed="true" (click)="all()">Todos</button>
+      <button class="btn btn-primary btn-lg active" role="button" arria-pressed="true" (click)="legendary()">Legendarios</button>
+      <button class="btn btn-primary btn-lg active" role="button" arria-pressed="true" (click)="rare()">Raros</button>
+      <button class="btn btn-primary btn-lg active" role="button" arria-pressed="true" (click)="fanatic()">Fanatico</button>
+      <button class="btn btn-primary btn-lg active" role="button" arria-pressed="true" (click)="normal()">Normal</button>
     </div>
     <div id="dropslist">
-      <div class="products raro">
+      <div class="products raro" *ngIf="showAll || showRare">
         <img src="/assets/images/0101.png" alt="" />
         <div id="desc">
           <p>Raro #/0101</p>
@@ -51,14 +51,14 @@
         </div>
         <div id="foot">
           <p>
-            Lowest Ask <span>USD $1.00</span>
+            Lowest Ask <span id="blank">USD $1.00</span>
           </p>
           <p>
            Avg Sale <span>USD $1.05</span>
           </p>
         </div>
       </div>
-      <div class="products normal">
+      <div class="products normal" *ngIf="showAll || showNormal">
         <img src="/assets/images/0202.png" alt="" />
         <div id="desc">
           <p>Normal #/0202</p>
@@ -67,14 +67,14 @@
         </div>
         <div id="foot">
           <p>
-            Lowest Ask <span>USD $2.00</span>
+            Lowest Ask <span id="blank">USD $2.00</span>
           </p>
           <p>
            Avg Sale <span>USD $1.58</span>
           </p>
         </div>
       </div>
-      <div class="products fanatico">
+      <div class="products fanatico" *ngIf="showAll || showFanatic">
         <img src="/assets/images/0303.png" alt="" />
         <div id="desc">
           <p>Fanatico #/0303</p>
@@ -83,14 +83,14 @@
         </div>
         <div id="foot">
           <p>
-            Lowest Ask <span>USD $2.00</span>
+            Lowest Ask <span id="blank">USD $2.00</span>
           </p>
           <p>
            Avg Sale <span>USD $1.58</span>
           </p>
         </div>
       </div>
-      <div class="products legendario" >
+      <div class="products legendario" *ngIf="showAll || showLegendary" >
         <img src="/assets/images/0404.png" alt="" />
         <div id="desc">
           <p>Legendario #/0404</p>
@@ -99,14 +99,14 @@
         </div>
         <div id="foot">
           <p>
-            Lowest Ask <span>USD $10.00</span>
+            Lowest Ask <span id="blank">USD $10.00</span>
           </p>
           <p>
            Avg Sale <span>USD $11.75</span>
           </p>
         </div>
       </div>
-      <div class="products raro" >
+      <div class="products raro" *ngIf="showAll || showRare" >
         <img src="/assets/images/0505.png" alt="" />
         <div id="desc">
           <p>Raro #/0505</p>
@@ -115,14 +115,14 @@
         </div>
         <div id="foot">
           <p>
-            Lowest Ask <span>USD $11.00</span>
+            Lowest Ask <span id="blank">USD $11.00</span>
           </p>
           <p>
            Avg Sale <span>USD $8.38</span>
           </p>
         </div>
       </div>
-      <div class="products normal" >
+      <div class="products normal" *ngIf="showAll || showNormal" >
         <img src="/assets/images/0606.png" alt="" />
         <div id="desc">
           <p>Normal #/0606</p>
@@ -131,14 +131,14 @@
         </div>
         <div id="foot">
           <p>
-            Lowest Ask <span>USD $2.00</span>
+            Lowest Ask <span id="blank">USD $2.00</span>
           </p>
           <p>
            Avg Sale <span>USD $1.06</span>
           </p>
         </div>
       </div>
-      <div class="products fanatico" >
+      <div class="products fanatico" *ngIf="showAll || showFanatic" >
         <img src="/assets/images/0707.png" alt="" />
         <div id="desc">
           <p>Fanatico #/0707</p>
@@ -147,14 +147,14 @@
         </div>
         <div id="foot">
           <p>
-            Lowest Ask <span>USD $2.00</span>
+            Lowest Ask <span id="blank">USD $2.00</span>
           </p>
           <p>
            Avg Sale <span>USD $1.23</span>
           </p>
         </div>
       </div>
-      <div class="products legendario">
+      <div class="products legendario" *ngIf="showAll || showLegendary">
         <img src="/assets/images/0808.png" alt="" />
         <div id="desc">
           <p>Legendario  #/0808</p>
@@ -163,14 +163,14 @@
         </div>
         <div id="foot">
           <p>
-            Lowest Ask <span>USD $2.00</span>
+            Lowest Ask <span id="blank">USD $2.00</span>
           </p>
           <p>
            Avg Sale <span>USD $1.23</span>
           </p>
         </div>
       </div>
-      <div class="products raro">
+      <div class="products raro" *ngIf="showAll || showRare">
         <img src="/assets/images/0101.png" alt="" />
         <div id="desc">
           <p>Raro #/0101</p>
@@ -179,14 +179,14 @@
         </div>
         <div id="foot">
           <p>
-            Lowest Ask <span>USD $1.00</span>
+            Lowest Ask <span id="blank">USD $1.00</span>
           </p>
           <p>
            Avg Sale <span>USD $1.05</span>
           </p>
         </div>
       </div>
-      <div class="products normal">
+      <div class="products normal" *ngIf="showAll || showNormal">
         <img src="/assets/images/0202.png" alt="" />
         <div id="desc">
           <p>Normal #/0202</p>
@@ -195,14 +195,14 @@
         </div>
         <div id="foot">
           <p>
-            Lowest Ask <span>USD $2.00</span>
+            Lowest Ask <span id="blank">USD $2.00</span>
           </p>
           <p>
            Avg Sale <span>USD $1.58</span>
           </p>
         </div>
       </div>
-      <div class="products fanatico">
+      <div class="products fanatico" *ngIf="showAll || showFanatic">
         <img src="/assets/images/0303.png" alt="" />
         <div id="desc">
           <p>Fanatico #/0303</p>
@@ -211,14 +211,14 @@
         </div>
         <div id="foot">
           <p>
-            Lowest Ask <span>USD $2.00</span>
+            Lowest Ask <span id="blank">USD $2.00</span>
           </p>
           <p>
            Avg Sale <span>USD $1.58</span>
           </p>
         </div>
       </div>
-      <div class="products legendario" >
+      <div class="products legendario" *ngIf="showAll || showLegendary" >
         <img src="/assets/images/0404.png" alt="" />
         <div id="desc">
           <p>Legendario #/0404</p>
@@ -227,14 +227,14 @@
         </div>
         <div id="foot">
           <p>
-            Lowest Ask <span>USD $10.00</span>
+            Lowest Ask <span id="blank">USD $10.00</span>
           </p>
           <p>
            Avg Sale <span>USD $11.75</span>
           </p>
         </div>
       </div>
-      <div class="products raro" >
+      <div class="products raro" *ngIf="showAll || showRare" >
         <img src="/assets/images/0505.png" alt="" />
         <div id="desc">
           <p>Raro #/0505</p>
@@ -243,14 +243,14 @@
         </div>
         <div id="foot">
           <p>
-            Lowest Ask <span>USD $11.00</span>
+            Lowest Ask <span id="blank">USD $11.00</span>
           </p>
           <p>
            Avg Sale <span>USD $8.38</span>
           </p>
         </div>
       </div>
-      <div class="products normal" >
+      <div class="products normal" *ngIf="showAll || showNormal" >
         <img src="/assets/images/0606.png" alt="" />
         <div id="desc">
           <p>Normal #/0606</p>
@@ -259,14 +259,14 @@
         </div>
         <div id="foot">
           <p>
-            Lowest Ask <span>USD $2.00</span>
+            Lowest Ask <span id="blank">USD $2.00</span>
           </p>
           <p>
            Avg Sale <span>USD $1.06</span>
           </p>
         </div>
       </div>
-      <div class="products fanatico" >
+      <div class="products fanatico" *ngIf="showAll || showFanatic" >
         <img src="/assets/images/0707.png" alt="" />
         <div id="desc">
           <p>Fanatico #/0707</p>
@@ -275,14 +275,14 @@
         </div>
         <div id="foot">
           <p>
-            Lowest Ask <span>USD $2.00</span>
+            Lowest Ask <span id="blank">USD $2.00</span>
           </p>
           <p>
            Avg Sale <span>USD $1.23</span>
           </p>
         </div>
       </div>
-      <div class="products legendario">
+      <div class="products legendario" *ngIf="showAll || showLegendary">
         <img src="/assets/images/0808.png" alt="" />
         <div id="desc">
           <p>Legendario  #/0808</p>
@@ -291,7 +291,7 @@
         </div>
         <div id="foot">
           <p>
-            Lowest Ask <span>USD $2.00</span>
+            Lowest Ask <span id="blank">USD $2.00</span>
           </p>
           <p>
            Avg Sale <span>USD $1.23</span>
@@ -300,59 +300,59 @@
       </div>
     </div>
   </section>
-  <section>
-    <h1>MEJORES VENDIDOS</h1>
+  <section style="margin-top: 10%;">
+    <h1 class="gradient-underline">MEJORES VENDIDOS</h1>
     <div id="seller">
-      <div id="best">
+      <div class="raro-1" id="best">
         <img src="assets/images/0101.png" alt="" />
         <div id="text">
           <p>Raro #/0101</p>
           <h2>LUIS TINOCO</h2>
           <p>Assist - Dec 07 2022, Base set (Series 4), Vortex, CHI</p>
           <p>
-            Lowest Ask <span>USD $1.00</span>
+            Lowest Ask <span id="blank">USD $1.00</span>
           </p>
           <p>
            Avg Sale <span>USD $1.05</span>
           </p>
         </div>
       </div>
-      <div id="best">
+      <div class="normal-1" id="best">
         <img src="assets/images/0202.png" alt="" />
         <div id="text">
           <p>Común  #/0202</p>
           <h2>ISAIAH SOMBRITE</h2>
           <p>3 pointer - Jan 30 2021, Base Set (Series 2), POR</p>
           <p>
-            Lowest Ask <span>USD $1.00</span>
+            Lowest Ask <span id="blank">USD $1.00</span>
           </p>
           <p>
            Avg Sale <span>USD $1.05</span>
           </p>
         </div>
       </div>
-      <div id="best">
+      <div class="fanatico-1" id="best">
         <img src="assets/images/0303.png" alt="" />
         <div id="text">
           <p>Legendario  #/0303</p>
           <h2>SHELTON EPPLER</h2>
           <p>Reel - Oct 27 2022, Video Game Numbers (Series 4), DAL</p>
           <p>
-            Lowest Ask <span>USD $1.00</span>
+            Lowest Ask <span id="blank">USD $1.00</span>
           </p>
           <p>
            Avg Sale <span>USD $1.05</span>
           </p>
         </div>
       </div>
-      <div id="best">
+      <div class="legendario-1" id="best">
         <img src="assets/images/0404.png" alt="" />
         <div id="text">
           <p>Legendario  #/0404</p>
           <h2>CORAY WILLIAMS</h2>
           <p>Handles - Nov 23 2022, The Challenge: Icon (Series 4), LAL</p>
           <p>
-            Lowest Ask <span>USD $10.00</span>
+            Lowest Ask <span id="blank">USD $10.00</span>
           </p>
           <p>
            Avg Sale <span>USD $11.75</span>
@@ -361,10 +361,10 @@
       </div>
     </div>
   </section>
-  <section>
-    <h1>COMPRADO RECIENTEMENTE</h1>
+  <section style="margin-top: 10%;">
+    <h1 class="gradient-underline">COMPRADO RECIENTEMENTE</h1>
     <div id="seller">
-      <div id="recent">
+      <div class="raro-1" id="recent">
         <img src="assets/images/0505.png" alt="" />
         <div id="text2">
           <p>Raro #/0505</p>
@@ -373,14 +373,14 @@
         </div>
         <div id="foot">
           <p>
-            Lowest Ask <span>USD $11.00</span>
+            Lowest Ask <span id="blank">USD $11.00</span>
           </p>
           <p>
            Avg Sale <span>USD $8.38</span>
           </p>
         </div>
       </div>
-      <div id="recent">
+      <div class="normal-1" id="recent">
         <img src="assets/images/0606.png" alt="" />
         <div id="text2">
           <p>Normal #/0606</p>
@@ -389,14 +389,14 @@
         </div>
         <div id="foot">
           <p>
-            Lowest Ask <span>USD $2.00</span>
+            Lowest Ask <span id="blank">USD $2.00</span>
           </p>
           <p>
            Avg Sale <span>USD $1.06</span>
           </p>
         </div>
       </div>
-      <div id="recent">
+      <div class="fanatico-1" id="recent">
         <img src="assets/images/0707.png" alt="" />
         <div id="text2">
           <p>Fanatico #/0707</p>
@@ -405,14 +405,14 @@
         </div>
         <div id="foot">
           <p>
-            Lowest Ask <span>USD $2.00</span>
+            Lowest Ask <span id="blank">USD $2.00</span>
           </p>
           <p>
            Avg Sale <span>USD $1.23</span>
           </p>
         </div>
       </div>
-      <div id="recent">
+      <div class="legendario-1" id="recent">
         <img src="assets/images/0808.png" alt="" />
         <div id="text2">
           <p>Legendario  #/0808</p>
@@ -421,7 +421,7 @@
         </div>
         <div id="foot">
           <p>
-            Lowest Ask <span>USD $2.00</span>
+            Lowest Ask <span id="blank">USD $2.00</span>
           </p>
           <p>
            Avg Sale <span>USD $1.23</span>
