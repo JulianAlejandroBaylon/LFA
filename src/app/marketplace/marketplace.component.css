@@ -134,14 +134,14 @@ text-align: center;
 }
 
 .products {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    margin: 1% auto;
-    width: 20%;
-    color: rgb(139 139 139);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 1% 2.5%;
+  width: 20%;
+  color: #8b8b8b;
 }
 .products #blank, .products h2{
   color: white;
@@ -163,25 +163,22 @@ text-align: center;
 .raro{
   background-image: url(/assets/images/fondoAzul.png);
   background-repeat: no-repeat;
+  background-size: 104% 103%;
   background-position: center;
-  border: 2px solid #1B57A3;
-  border-radius: 3%;
 }
 
 .normal{
   background-image: url(/assets/images/fondoGris.png);
   background-repeat: no-repeat;
+  background-size: 104% 103%;
   background-position: center;
-  border: 2px solid #FFFFFF;
-  border-radius: 3%;
 }
 
 .fanatico{
   background-image: url(/assets/images/fondoRojo.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  border: 2px solid #C1010E;
-  border-radius: 3%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 104% 103%;
 }
 
 .legendario{
@@ -201,9 +198,9 @@ text-align: center;
 }
 
 #rare{
-  border-top-color: #1B57A3;
-    border-top-style: solid;
-    width: 100%;
+  border-top-color: #1b57a36b;
+  border-top-style: solid;
+  width: 98.5%;
 }
 
 #rare p, #legend p, #fanatic p, #normal p{
@@ -215,15 +212,15 @@ text-align: center;
 }
 
 #normal{
-  border-top-color: #ffffff;
-    border-top-style: solid;
-    width: 100%;
+  border-top-color: #ffffffb5;
+  border-top-style: solid;
+  width: 98.5%;
 }
 
 #fanatic{
-  border-top-color: #C1010E;
+  border-top-color: #c1010e80;
     border-top-style: solid;
-    width: 100%;
+    width: 98.5%;
 }
 
 #legend{
@@ -279,28 +276,28 @@ text-align: center;
   background-image: url(/assets/images/SombraAzul.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 135%;
+    background-size: 120%;
 }
 
 .normal-1 img, .raro-2 img{
   background-image: url(/assets/images/SombraRoja.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 135%;
+    background-size: 120%;
 }
 
 .fanatico-1 img, .legendario-2 img{
   background-image: url(/assets/images/SombraDorada.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 135%;
+    background-size: 120%;
 }
 
 .legendario-1 img, .normal-2 img{
   background-image: url(/assets/images/SombraMorada.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 135%;
+    background-size: 120%;
 }
 
 #last{
