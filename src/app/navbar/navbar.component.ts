@@ -11,6 +11,6 @@ export class NavbarComponent {
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
-    this.isNavbarScrolled = (window.pageYOffset > 0);
+    this.isNavbarScrolled = (window.pageYOffset > 100);
   }
 }

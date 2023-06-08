@@ -1,0 +1,15 @@
+div{
+  background-color: #0B0B0B;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p{
+  color: #A5ACBA;
+  margin-right: 5%;
+}
+
+img{
+  width: 3%;
+}
