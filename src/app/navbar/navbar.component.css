@@ -26,6 +26,10 @@
   box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.25), inset 3px 4px 5px rgba(255, 255, 255, 0.25);
 }
 
+nav.scrolled {
+  background-color: rgb(0, 0, 0); /* Cambia el color a tu preferencia */
+  /* Otros estilos para el navbar con scroll */
+}
 
 #botonlog {
   height: 40%;

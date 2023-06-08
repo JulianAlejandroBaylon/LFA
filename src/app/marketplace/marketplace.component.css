@@ -134,7 +134,6 @@ text-align: center;
 }
 
 .products {
-  border: 2px solid white;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -142,7 +141,6 @@ text-align: center;
     align-items: center;
     margin: 1% auto;
     width: 20%;
-    border-radius: 3%;
     color: rgb(139 139 139);
 }
 .products #blank, .products h2{
@@ -162,22 +160,35 @@ text-align: center;
   letter-spacing: 0.015em;
 }
 
-.raro, .raro-1{
-  background-color: #1b57a336;
+.raro{
+  background-image: url(/assets/images/fondoAzul.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 2px solid #1B57A3;
+  border-radius: 3%;
 }
 
-.normal, .normal-1{
-  background-color: #ffffff3d;
+.normal{
+  background-image: url(/assets/images/fondoGris.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 2px solid #FFFFFF;
+  border-radius: 3%;
 }
 
-.fanatico, .fanatico-1{
-  background-color: #df04fc42;
+.fanatico{
+  background-image: url(/assets/images/fondoRojo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 2px solid #C1010E;
+  border-radius: 3%;
 }
 
-.legendario, .legendario-1{
-  backdrop-filter: blur(27px);
-    background-color: #efb81087;
-
+.legendario{
+  background-image: url(/assets/images/fondoLegend.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 105% 103%;
 }
 
 .disable{
@@ -189,17 +200,36 @@ text-align: center;
     width: 90%;
 }
 
-#foot{
-  border-top-color: white;
+#rare{
+  border-top-color: #1B57A3;
     border-top-style: solid;
     width: 100%;
 }
 
-#foot p{
+#rare p, #legend p, #fanatic p, #normal p{
   margin: 5% auto;
   width: 90%;
   display: flex;
   justify-content: space-between;
+  color: #ffffff69;
+}
+
+#normal{
+  border-top-color: #ffffff;
+    border-top-style: solid;
+    width: 100%;
+}
+
+#fanatic{
+  border-top-color: #C1010E;
+    border-top-style: solid;
+    width: 100%;
+}
+
+#legend{
+  border-top-color: #24bb6796;
+    border-top-style: solid;
+    width: 99%;
 }
 
 #text{
@@ -223,6 +253,7 @@ text-align: center;
   color: white;
 }
 
+
 #best{
   display: flex;
   width: 40%;
@@ -235,6 +266,41 @@ text-align: center;
 
 #best img{
   width: 40%;
+}
+
+.fanatico-2 #fanatic,
+.normal-2 #normal,
+.legendario-2 #legend,
+.raro-2 #rare{
+  border-top-color: #ffffff;
+}
+
+.raro-1 img, .fanatico-2 img{
+  background-image: url(/assets/images/SombraAzul.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 135%;
+}
+
+.normal-1 img, .raro-2 img{
+  background-image: url(/assets/images/SombraRoja.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 135%;
+}
+
+.fanatico-1 img, .legendario-2 img{
+  background-image: url(/assets/images/SombraDorada.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 135%;
+}
+
+.legendario-1 img, .normal-2 img{
+  background-image: url(/assets/images/SombraMorada.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 135%;
 }
 
 #last{
