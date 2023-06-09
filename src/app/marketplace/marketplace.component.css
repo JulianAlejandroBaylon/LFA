@@ -8,6 +8,11 @@
 h1{
   color:white
 }
+p{
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 300;
+}
 .pt1 {
   background-image: url(/assets/images/fondo.png);
   text-align: center;
@@ -237,6 +242,7 @@ text-align: center;
 #text p{
   display: flex;
   justify-content: space-between;
+
 }
 
 #seller{
@@ -246,7 +252,15 @@ text-align: center;
   margin-top: 5%;
 }
 
-#seller #blank, #seller h2{
+#seller h2{
+  color: white;
+  font-family: 'Roboto-BoldItalic';
+  /* font-style: italic; */
+  font-weight: 600;
+  font-size: 180%;
+}
+
+#seller #blank{
   color: white;
 }
 
@@ -322,6 +336,7 @@ text-align: center;
 
 #text2, #foot{
   color: rgb(139 139 139);
+  width: 92%;
 }
 
 .gradient-underline {
