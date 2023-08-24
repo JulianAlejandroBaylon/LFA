@@ -1,5 +1,6 @@
 import { Component, HostListener } from '@angular/core';
 import { Router } from '@angular/router';
+import { ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
